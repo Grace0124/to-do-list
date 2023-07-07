@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #b8c0ff;
+    --white: white;
+    --black: black;
+    --pink: #ffd6ff;
+    --light-blue: #bbd0ff;
+}
+
+body {
+    height: 100vh;
+    background: var(--blue);
+}
+
+.container {
+    width: 40%;
+    background: var(--white);
+    min-width: 450px;
+    position: absolute;
+    min-height: 100px;
+
+    /* positioning in center of screen*/
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+}
+
+#newtask {
+    position: relative;
+    padding: 30px 20px;
+}
+
+#newtask input {
+    width: 75%;
+    height: 45px;
+    padding: 12px;
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+
+    /* text */
+    color: var(--black);
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* when you click on input text box */
+#newtask input:focus {
+    outline: none;
+    border-color: var(--pink);
+}
+
+#newtask button {
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: var(--pink);
+    border: none;
+    color: var(--black);
+    cursor: pointer;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#tasks{
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    background-color: var(--white);
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+
+.task{
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid var(--blue);
+    cursor: pointer;
+    background-color: var(--white);
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+}
+
+.task span{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.task button{
+    background-color: var(--pink);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+}
